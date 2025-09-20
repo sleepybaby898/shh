@@ -53,7 +53,7 @@ int main() {
                 printf("touch: missing file operand\n");
                 continue;
             }
-
+            
             snprintf(cmd, sizeof(cmd), "cmd /c type nul > \"%s\"", filename); // make blank file similar to touch
             system(cmd);
 
